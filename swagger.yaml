@@ -7,7 +7,7 @@ info:
 
 schemes:
   - http
-host: 165.227.29.22:8080
+host: localhost:8080
 basePath: /api
 
 paths:
