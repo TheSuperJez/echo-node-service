@@ -1,0 +1,51 @@
+{
+  "name": "api-node",
+  "version": "1.0.0",
+  "description": "API de prueba para nodeJS",
+  "main": "dist",
+  "scripts": {
+    "dev": "nodemon -w src --exec \"babel-node src --presets es2015,stage-0\"",
+    "build": "babel src -s -D -d dist --presets es2015,stage-0",
+    "start": "node dist",
+    "prestart": "npm run -s build",
+    "lint": "node node_modules/.bin/eslint --color src",
+    "doc": "node node_modules/yuidocjs/lib/cli.js -c yuidoc.json"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 7,
+      "sourceType": "module"
+    },
+    "env": {
+      "node": true
+    },
+    "rules": {
+      "no-console": 0,
+      "no-unused-vars": 1
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-core": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "eslint": "^3.19.0",
+    "eslint-config-strongloop": "^2.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "nodemon": "^1.9.2",
+    "yuidocjs": "^0.10.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "compression": "^1.5.2",
+    "cors": "^2.7.1",
+    "express": "^4.13.3",
+    "morgan": "^1.8.0",
+    "resource-router-middleware": "^0.6.0",
+    "swagger-ui-express": "^2.0.15",
+    "yamljs": "^0.3.0"
+  }
+}

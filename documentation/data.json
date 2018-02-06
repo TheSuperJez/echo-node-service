@@ -1,0 +1,128 @@
+{
+    "project": {
+        "name": "Echo API",
+        "description": "Echo API to test HTTP request",
+        "version": "1.0.0",
+        "nocode": true
+    },
+    "files": {
+        "src/api.js": {
+            "name": "src/api.js",
+            "modules": {},
+            "classes": {
+                "API": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/index.js": {
+            "name": "src/index.js",
+            "modules": {},
+            "classes": {
+                "Index": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/util.js": {
+            "name": "src/util.js",
+            "modules": {},
+            "classes": {
+                "Util": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {
+        "API": {
+            "name": "API",
+            "shortname": "API",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/api.js",
+            "line": 1,
+            "description": "api.js\nJorge Esteban Zaragoza Salazar"
+        },
+        "Index": {
+            "name": "Index",
+            "shortname": "Index",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/index.js",
+            "line": 1,
+            "description": "index.js\nJorge Esteban Zaragoza Salazar"
+        },
+        "Util": {
+            "name": "Util",
+            "shortname": "Util",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/util.js",
+            "line": 1,
+            "description": "util.js\nJorge Esteban Zaragoza Salazar"
+        }
+    },
+    "elements": {},
+    "classitems": [
+        {
+            "file": "src/api.js",
+            "line": 10,
+            "description": "Function to create the Route Handler and URI mappings.",
+            "itemtype": "method",
+            "name": "createRouteHandler",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "HTTP Request Object",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "Returns an Express Router configured with URI Mappings.",
+                "type": "Object"
+            },
+            "class": "API"
+        },
+        {
+            "file": "src/index.js",
+            "line": 15,
+            "description": "Property to setup the Express HTTP Server",
+            "itemtype": "property",
+            "name": "app",
+            "type": "{Object}",
+            "class": "Index"
+        },
+        {
+            "file": "src/util.js",
+            "line": 7,
+            "description": "Method to handle the HTTP request.",
+            "itemtype": "method",
+            "name": "handleRequest",
+            "params": [
+                {
+                    "name": "req",
+                    "description": "HTTP Request Object",
+                    "type": "Object"
+                },
+                {
+                    "name": "res",
+                    "description": "HTTP Response Object",
+                    "type": "Object"
+                }
+            ],
+            "class": "Util"
+        }
+    ],
+    "warnings": []
+}

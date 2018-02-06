@@ -1,0 +1,10 @@
+{
+    "name": "Echo API",
+    "description": "Echo API to test HTTP request",
+    "version": "1.0.0",
+    "nocode": true,
+    "options": {
+            "paths": ["./src"],
+            "outdir": "./documentation"
+    }
+}

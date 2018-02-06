@@ -1,0 +1,46 @@
+swagger: "2.0"
+
+info:
+  version: 1.0.0
+  title: Echo API
+  description: A simple API to test HTTP requests
+
+schemes:
+  - http
+host: 165.227.29.22:8080
+basePath: /api
+
+paths:
+  /echo:
+    post:
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      summary: POST Entrypoint for echoing
+      description: POST Entrypoint that will return the response specified in expect JSON Element
+      parameters:
+        - name: body
+          in: body
+          required: true
+          schema:
+            type: object
+            properties:
+              expect: 
+                type: object
+                properties:
+                  contentType:
+                    type: string
+                    example: application/json
+                  response:
+                    type: object
+                    example: {message: "hello world"}
+                  statuscode:
+                    type: int
+                    example: 200
+      responses:
+        200:
+          description: Response
+          schema:
+            type: object
+            example: {message: "hello world"}
