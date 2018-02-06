@@ -29,7 +29,11 @@ Curl:
 		}
 	}
 ```
-where "response" in the expect section is the json to be returned by the service, contenType is the ContentType's response and statusCode is the HTTP StatusCode to be returned   
+where "response" in the expect section is the json to be returned by the service, contenType is the ContentType's response and statusCode is the HTTP StatusCode to be returned.   
 
+Default entrypoints:   
 
+| http://<host>:<port>/api      | API Specification entrypoint |
+|-------------------------------|------------------------------|
+| http://<host>:<port>/api-docs | Swagger API Documentation    |
 

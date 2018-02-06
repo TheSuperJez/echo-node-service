@@ -17,7 +17,7 @@ import echo from './util';
 let createRouteHandler = ({ config }) => {
 	let api = Router();
 	
-	console.log("Config: ");
+	console.log('Config: ');
 	console.log(config);
 
 	api.get('/', (req, res) => {
