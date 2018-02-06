@@ -32,6 +32,7 @@ Curl:
 where "response" in the expect section is the json to be returned by the service, contenType is the ContentType's response and statusCode is the HTTP StatusCode to be returned.   
 
 Default entrypoints:   
+
 | Entrypoint                    | Description                  |
 |-------------------------------|------------------------------|
 | http://<host>:<port>/api      | API Specification entrypoint |
