@@ -35,6 +35,6 @@ Default entrypoints:
 
 | Entrypoint                    | Description                  |
 |-------------------------------|------------------------------|
-| http://<host>:<port>/api      | API Specification entrypoint |
-| http://<host>:<port>/api-docs | Swagger API Documentation.   |
+| http://host:port/api      | API Specification entrypoint |
+| http://host:port/api-docs | Swagger API Documentation.   |
 
